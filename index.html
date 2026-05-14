@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT-Krug | Managed IT & Security aus Hamburg</title>
+  <meta name="description" content="IT-Krug – Ihr Partner für Managed IT Services, Cybersecurity, Self-Hosted Infrastruktur und Open-Source Lösungen in Hamburg." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-bracket">[</span>IT-Krug<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#contact" class="btn-nav">Kontakt</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">Hamburg · Open-Source First</div>
+      <h1 class="hero-title">
+        Infrastruktur,<br />
+        <span class="gradient-text">die funktioniert.</span>
+      </h1>
+      <p class="hero-sub">
+        Managed IT Services, Cybersecurity und selbstgehostete Lösungen –
+        ohne Vendor-Lock-in, ohne Lizenz-Chaos.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Anfrage stellen</a>
+        <a href="#services" class="btn-ghost">Services ansehen</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">18+</span><span class="stat-l">Dienste betrieben</span></div>
+        <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Open-Source</span></div>
+        <div class="stat"><span class="stat-n">0€</span><span class="stat-l">Lizenzkosten</span></div>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">aucky@nexdesk:~</span>
+      </div>
+      <div class="terminal-body" id="terminal"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Was wir tun</span>
+        <h2>Services</h2>
+        <p>Alles aus einer Hand – von der Infrastruktur bis zum Helpdesk.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Managed IT</h3>
+          <p>Vollständige IT-Betreuung Ihres Unternehmens – proaktives Monitoring, Patch-Management und schneller Support.</p>
+          <ul class="service-list">
+            <li>24/7 Monitoring &amp; Alerting</li>
+            <li>Patch- &amp; Update-Management</li>
+            <li>Helpdesk &amp; Remote-Support</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-badge">Beliebt</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Zero-Trust-Architektur, SIEM, Threat Intelligence und Incident Response – Sicherheit als Grundprinzip.</p>
+          <ul class="service-list">
+            <li>Wazuh SIEM + XDR</li>
+            <li>MISP Threat Intelligence</li>
+            <li>Vulnerability Management</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Self-Hosted Infrastructure</h3>
+          <p>Ihre Daten bleiben bei Ihnen. Wir deployen und betreiben Open-Source-Alternativen zu teurer Cloud-Software.</p>
+          <ul class="service-list">
+            <li>E-Mail (grommunio)</li>
+            <li>SSO &amp; Identity (Authentik)</li>
+            <li>Collaboration &amp; ERP</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>DevOps &amp; Automation</h3>
+          <p>CI/CD-Pipelines, Infrastructure-as-Code und Automatisierung für schnellere Deployments und weniger Fehler.</p>
+          <ul class="service-list">
+            <li>Gitea + CI Runners</li>
+            <li>Proxmox LXC/VM Deployment</li>
+            <li>Ansible &amp; Shell Automation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Remote Access</h3>
+          <p>Sicherer Remote-Zugriff auf alle Systeme – komplett selbstgehostet, ohne externe Abhängigkeiten.</p>
+          <ul class="service-list">
+            <li>RustDesk Self-Hosted</li>
+            <li>WireGuard VPN</li>
+            <li>Zero-Trust Access</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Compliance &amp; Backup</h3>
+          <p>DSGVO-konforme Datenhaltung, regelmäßige Backups und schnelle Wiederherstellung im Ernstfall.</p>
+          <ul class="service-list">
+            <li>Proxmox Backup Server</li>
+            <li>Mail-Archivierung (Mailpiler)</li>
+            <li>DSGVO-Compliance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section section-dark" id="stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Womit wir arbeiten</span>
+        <h2>Tech Stack</h2>
+        <p>100% Open-Source. Kein Lock-in. Kein Vendor-Drama.</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-category">
+          <h4>Infrastruktur</h4>
+          <div class="stack-tags">
+            <span>Proxmox VE</span><span>Debian Linux</span><span>ZFS</span>
+            <span>pfSense</span><span>WireGuard</span><span>HAProxy</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h4>Security</h4>
+          <div class="stack-tags">
+            <span>Wazuh SIEM</span><span>MISP</span><span>TheHive</span>
+            <span>Shuffle SOAR</span><span>Velociraptor</span><span>Authentik SSO</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h4>Kommunikation</h4>
+          <div class="stack-tags">
+            <span>grommunio</span><span>Matrix</span><span>Mailpiler</span>
+            <span>Vaultwarden</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h4>Development</h4>
+          <div class="stack-tags">
+            <span>Gitea</span><span>Rust</span><span>TypeScript</span>
+            <span>Python</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="section-tag">// Wer wir sind</span>
+        <h2>IT-Krug</h2>
+        <p>
+          IT-Krug ist ein IT-Dienstleister aus Hamburg, spezialisiert auf
+          Managed IT Services und selbstgehostete Infrastruktur. Wir glauben,
+          dass Unternehmen die Kontrolle über ihre eigene IT behalten sollten –
+          ohne monatliche Lizenzgebühren und ohne Abhängigkeit von US-Cloud-Anbietern.
+        </p>
+        <p>
+          Unser Ansatz: Sicherheit ist kein Add-on, sondern ein Grundprinzip.
+          Open-Source first. Zero-Trust always. Alles, was wir einsetzen,
+          betreiben wir auch selbst.
+        </p>
+        <div class="about-badges">
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Security First
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Open-Source Only
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Hamburg, DE
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="about-card-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="about-card-body">
+            <div class="infra-row"><span class="infra-key">uptime</span><span class="infra-val green">99.9%</span></div>
+            <div class="infra-row"><span class="infra-key">containers</span><span class="infra-val">18 running</span></div>
+            <div class="infra-row"><span class="infra-key">security_events</span><span class="infra-val">monitored</span></div>
+            <div class="infra-row"><span class="infra-key">backup_status</span><span class="infra-val green">verified</span></div>
+            <div class="infra-row"><span class="infra-key">open_source</span><span class="infra-val cyan">100%</span></div>
+            <div class="infra-row"><span class="infra-key">vendor_lockin</span><span class="infra-val red">false</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-text">
+        <span class="section-tag">// Kontakt</span>
+        <h2>Projekt starten</h2>
+        <p>Erzählen Sie uns von Ihrer Infrastruktur – wir finden eine Lösung.</p>
+        <div class="contact-info">
+          <a href="mailto:info@it-krug.de" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@it-krug.de
+          </a>
+          <span class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Hamburg, Deutschland
+          </span>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Max Mustermann" required />
+          </div>
+          <div class="form-group">
+            <label>E-Mail</label>
+            <input type="email" placeholder="max@beispiel.de" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Unternehmen</label>
+          <input type="text" placeholder="Mustermann GmbH (optional)" />
+        </div>
+        <div class="form-group">
+          <label>Nachricht</label>
+          <textarea rows="4" placeholder="Beschreiben Sie Ihr Projekt oder Ihre Anfrage..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo"><span class="logo-bracket">[</span>IT-Krug<span class="logo-bracket">]</span></span>
+      <p>© 2026 IT-Krug · Hamburg · Alle Rechte vorbehalten</p>
+      <div class="footer-links">
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
